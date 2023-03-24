@@ -1,0 +1,382 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Poppins;
+    color: #fff;
+}
+h1,h2,h3{
+    text-align: center;
+}
+h2{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-weight: 500;
+    font-size: 1.12em;
+}
+hr{
+    border: none;
+    border-bottom: #333 solid 1px;
+    width: 75vw; margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+body{
+    background-color: rgb(10,10,10);
+}
+header{
+    background-color: #222;
+    height: 60px; width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.homeheaderlink{
+    transform: scale(0.75);
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    transition: all 0.35s;
+}
+.homeheaderlink:hover{
+    transform: scale(0.85);
+}
+.homeheaderlink img{
+    height: 100%;
+    filter: drop-shadow(3px 4px 4px #000a);
+}
+.headerlinks{
+    display: inline-block;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+}
+.headerlinks a{
+    padding: 3px 8px;
+
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.35s;
+}
+.headerlinks a img{
+    height: 23px;
+    vertical-align: -6px;
+    margin-right: 6px;
+    filter: invert(100%);
+}
+.headerlinks a:hover{
+    background-color: #333;
+}
+.searchdiv
+{
+    display: inline-block;
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;margin:auto;
+    height: 34px; width: 290px;
+    text-align: center;
+}
+.searchbar{
+    display: inline-block;
+    position: relative;
+    background-color: #111;
+    border: #555 solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    height: 32px; width: 240px;
+}
+.searchbutton{
+    display: inline-block;
+    height: 32px; width: 32px;
+    background-color: #111;
+    border-radius: 20px;
+    border: #555 solid 1px;
+}
+.searchbutton img{
+    vertical-align: middle;
+    transform: scale(0.6);
+    height: 100%;
+    width: 100%;
+    filter: /*#555*/ brightness(0)invert(33%)sepia(0%)saturate(0%)hue-rotate(184deg)brightness(87%)contrast(79%);
+}
+footer{
+    background-color: #222;
+    height: 40px; width: 100%;
+    display: inline-block;
+    position: relative;
+}
+footer a{
+    line-height: 40px;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 100%;
+    min-height: calc(100vh - (60px + 40px)); /* min-height = 100% - header y footer */
+    position: relative;
+}
+.mobile-header{
+    display: none;
+}
+.mobile-startsearch{
+    display: inline-block;
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    left: 435px;
+    height: 32px; width: 32px;
+    background-color: #111;
+    border-radius: 20px;
+    border: #555 solid 1px;
+}
+.mobile-startsearch img{
+    transform: scale(0.6);
+    height: 100%;
+    width: 100%;
+    filter: /*#555*/ brightness(0)invert(33%)sepia(0%)saturate(0%)hue-rotate(184deg)brightness(87%)contrast(79%);
+    user-select: none;
+}
+.mobile-searchbar{
+    display: block;
+    position: relative;
+    left: -100vw;
+    opacity: 0;
+    height: 34px; width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #111;
+    border: #555 solid 1px;
+    z-index: 100;
+    transition: all 0.45s;
+}
+.welc_msg{
+    padding-top: 35px;
+}
+.welc_msg_hl{
+    background: linear-gradient(90deg, #5d68f5 0%, #aca3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.homeP{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: center;
+    font-size: 14px;
+}
+.whoim_div{
+    background-color: #212133;
+    position: relative;
+    padding: 20px;
+    margin: 8px auto;
+    border-radius: 24px;
+    max-width: 900px;
+    transition: all 0.35s;
+}
+.whoim_div:hover{
+    transform: scale(1.03);
+}
+.title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.65em;
+}
+.descrip-parraf{
+    text-align: center;
+    margin: 12px auto;
+    font-weight: 500;
+}
+.whoim_highlight{
+    color: #aaf;
+    font-weight: 600;
+}
+.blueblock{
+    background: linear-gradient(90deg, rgba(33,33,51,1) 0%, rgba(14,14,23,1) 100%);
+    height: 500px;
+    text-align: center;
+}
+.blueblock img{
+    margin-top: 10px;
+    height: 83%;
+    opacity: 0.8;
+    transition: all 0.35s;
+}
+.blueblock img:hover{
+    height: 87%;
+    margin-top: 0px;
+}
+.blocktitle{
+    padding-top: 12px;
+    font-size: 1.65em;
+    font-weight: 600;
+    text-align: center;
+}
+.blackblock{
+    height: 500px;
+    text-align: center;
+}
+.blackblock img{
+    margin-top: 10px;
+    height: 83%;
+    opacity: 0.8;
+    transition: all 0.35s;
+}
+.blackblock img:hover{
+    height: 87%;
+    margin-top: 0px;
+}
+@media (max-width: 1170px){
+    .welc_msg{
+        font-size: 1.5em;
+    }
+    .postwelc{
+        font-size: 0.85em;
+    }
+    .homeP{
+        font-size: 0.8em;
+    }
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .blueblock{
+        height: 400px;
+    }
+    .blueblock img{
+        height: 75%;
+    }
+    .blueblock img:hover{
+        height: 79%;
+        margin-top: 5px;
+    }
+    .blackblock{
+        height: 400px;
+    }
+    .blackblock img{
+        height: 75%;
+    }
+    .blackblock img:hover{
+        height: 79%;
+        margin-top: 5px;
+    }
+    .blocktitle{
+        font-size: 1.4em;
+    }
+    .title{
+        font-size: 1.35em;
+    }
+    .descrip-parraf{
+        font-size: 0.9em;
+    }
+}
+/*SPECIAL*/@media (max-width: 970px){
+    .whoim_div{
+        max-width: 88%;
+    }
+}
+@media (max-width: 500px){
+    .welc_msg{
+        font-size: 1.05em;
+    }
+    .postwelc{
+        font-size: 0.62em;
+    }
+    .homeP{
+        font-size: 0.5em;
+    }
+    .headerlinks a{
+        font-size: 0;
+        margin-left: 10px;
+    }
+    .headerlinks a img{
+        margin-right: 0;
+    }
+    .mobile-startsearch{
+        left: 235px;
+    }
+    .startsearch-largehitbox{
+        left: 233px;
+    }
+    .blueblock{
+        height: 300px;
+    }
+    .blueblock img{
+        height: 68%;
+    }
+    .blueblock img:hover{
+        height: 72%;
+        margin-top: 5px;
+    }
+    .blackblock{
+        height: 300px;
+    }
+    .blackblock img{
+        height: 68%;
+    }
+    .blackblock img:hover{
+        height: 72%;
+        margin-top: 5px;
+    }
+    .blocktitle{
+        font-size: 1.2em;
+    }
+    .title{
+        font-size: 1.0em;
+    }
+    .descrip-parraf{
+        font-size: 0.65em;
+    }
+    .whoim_div{
+        max-width: 84%;
+    }
+}
+@media (max-width: 350px)
+{
+    .welc_msg{
+        font-size: 0.85em;
+    }
+    .postwelc{
+        font-size: 0.55em;
+    }
+    .homeP{
+        font-size: 0.48em;
+    }
+    .blueblock{
+        height: 200px;
+    }
+    .blueblock img{
+        height: 68%;
+    }
+    .blueblock img:hover{
+        height: 72%;
+        margin-top: 5px;
+    }
+    .blackblock{
+        height: 200px;
+    }
+    .blackblock img{
+        height: 68%;
+    }
+    .blackblock img:hover{
+        height: 72%;
+        margin-top: 5px;
+    }
+    .blocktitle{
+        font-size: 1.0em;
+    }
+    .title{
+        font-size: 0.85em;
+    }
+    .descrip-parraf{
+        font-size: 0.5em;
+    }
+    .whoim_div{
+        max-width: 80%;
+    }
+}

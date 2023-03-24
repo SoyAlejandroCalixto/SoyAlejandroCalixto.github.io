@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Portafolio - Contacto</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="generalimages/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portafolio, Alejandro, Calixto, Lanzas, javascript">
+    <meta name="description" content="Este es el portfolio personal de Alejandro Calixto Lanzas (@Kappy) como programador.">
+    <meta name="author" content="Alejandro Calixto Lanzas">
+    <meta name="robots" content="noindex">
+    <title>Document</title>
+</head>
+<body>
+    <header class="desktop-header">
+        <a class="homeheaderlink" href="index.html"><img src="generalimages/logo.png" alt=""></a>
+        <div class="headerlinks">
+            <a href="paginas.html"><img src="generalimages/webs_vector.png">Páginas</a>
+            <a href="juegos.html"><img src="generalimages/games_vector.png">Juegos</a>
+            <a href="disciplinas.html"><img src="generalimages/disc_vector.png">Disciplinas</a>
+        </div>
+        <div class="searchdiv">
+            <input type="text" class="searchbar" placeholder="Buscar">
+            <a href="" class="searchbutton"><img src="generalimages/search_vector.png"></a>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <a class="homeheaderlink" href="index.html"><img src="generalimages/logo.png" alt=""></a>
+        <div class="headerlinks">
+            <a href="paginas.html"><img src="generalimages/webs_vector.png">Páginas</a>
+            <a href="juegos.html"><img src="generalimages/games_vector.png">Juegos</a>
+            <a href="disciplinas.html"><img src="generalimages/disc_vector.png">Disciplinas</a>
+        </div>
+        <a id="mobile-startsearch" class="mobile-startsearch"><img src="generalimages/search_vector.png"></a>
+        <input id="mobile-searchbar" type="text" class="mobile-searchbar" placeholder="Buscar">
+    </header>
+    <div class="flex-container">
+        <div id="main" class="flex-item main"> <!--* MAIN *-->
+            <h1 class="welc_msg2"><span class="cont_welc">Contacto</span></h1>
+            <h2 class="cont_postwelc">Introduce tus datos para contactar</h2>
+            <hr>
+            <form id="ContactForm" action="post">
+                <div class="cont_campdiv">
+                    <p class="cont_camp_p">Nombre:</p>
+                    <input name="name" id="nameinput" type="text" class="cont_input" placeholder="Nombre">
+                </div>
+                <div class="cont_campdiv">
+                    <p class="cont_camp_p">Correo:</p>
+                    <input name="email" id="emailinput" type="email" class="cont_input" placeholder="Correo">
+                </div>
+                <div class="cont_campdiv">
+                    <p class="cont_camp_p">Mensaje:</p>
+                    <textarea name="message" id="msginput" class="cont_areainput" placeholder="Mensaje"></textarea>
+                </div>
+            </form>
+            <button id="cont_submitbutton" class="cont_submitbutton">Enviar</button> 
+        </div>
+    </div>
+    <footer>
+        <a href="contacto.html">Contacto</a>
+    </footer>
+</body>
+<script src="index.js"></script>
+<script src="contacto.js"></script>
+</html>

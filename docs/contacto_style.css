@@ -1,0 +1,177 @@
+.cont_campdiv{
+    margin-bottom: 35px;
+    width: 420px;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+}
+.welc_msg2{
+    padding-top: 35px;
+}
+.cont_welc{
+    display: inline-block;
+    background: linear-gradient(90deg, #a80000 0%, #fe6262 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.cont_input{
+    display: block;
+    background-color: #111;
+    border: #555 solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    height: 32px; width: 420px;
+}
+.cont_areainput{
+    display: block;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    background-color: #111;
+    border: #555 solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    height: 220px; width: 420px;
+    min-height: 32px;
+    resize: vertical;
+}
+.cont_camp_p{
+    position: relative;
+    font-weight: 600;
+}
+.cont_submitbutton{
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    margin-bottom: 14px;
+    color: #111;
+    font-weight: 700;
+    font-size: 0.9em;
+    background-size: 300% 300%;
+    background-position: left;
+    background-image: linear-gradient(90deg, #a80000 0%, #fe6262 35%, #76ffcb 65%, #00a488 100%);
+    border: black solid 0px;
+    border-radius: 20px;
+    width: 422px; height: 34px;
+    transition: background 0.55s;
+}
+.cont_submitbutton:hover{
+    background-position: right;
+}
+.cont_registeredmsg{
+    text-align: center;
+    position: fixed;
+    width: 300px; height: 300px;
+    right: 0; bottom: -100vh; margin: 80px 40px;
+    opacity: 0;
+    background-color: #111;
+    border-radius: 16px;
+    border: #555 solid 1px;
+    animation: registeredmsg_anim;
+    animation-duration: 5s;
+}
+.cont_registeredmsg img{
+    opacity: 0.7;
+    height: 50%;
+    margin: 16px;
+}
+.cont_rm_top_p{
+    color: #aaa;
+    margin: 7px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.cont_rm_bottom_p{
+    color: #888;
+    margin: 7px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.cont_errormsg{
+    text-align: center;
+    color: #f44;
+    font-size: 12px;
+    font-weight: 400;
+}
+@keyframes registeredmsg_anim{
+    0%{
+        bottom: -100vh;
+        opacity: 1;
+    }
+    10%{
+        bottom: 0;
+    }
+    80%{
+        bottom: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        bottom: -100vh;
+        opacity: 0;
+    }
+}
+@media (max-width: 1170px){}
+@media (max-width: 500px){
+    .cont_campdiv{
+        width: 260px;
+    }
+    .cont_input{
+        width: 260px;
+    }
+    .cont_areainput{
+        width: 260px;
+    }
+    .cont_postwelc{
+        font-size: 1.0em;
+    }
+    .cont_submitbutton{
+        width: 262px;
+    }
+    .cont_submitbutton:after{
+        width: 262px;
+    }
+    .cont_registeredmsg{
+        height: 235px; width: 235px;
+        margin: 70px 30px;
+    }
+    .cont_rm_top_p{
+        font-size: 14px;
+    }
+    .cont_rm_bottom_p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px){
+    .cont_campdiv{
+        width: 210px;
+    }
+    .cont_input{
+        width: 210px;
+    }
+    .cont_areainput{
+        width: 210px;
+    }
+    .cont_postwelc{
+        font-size: 0.85em;
+    }
+    .cont_submitbutton{
+        width: 212px;
+    }
+    .cont_submitbutton:after{
+        width: 212px;
+    }
+    .cont_registeredmsg{
+        height: 180px; width: 180px;
+        margin: 70px 30px;
+        border-radius: 12px;
+    }
+    .cont_rm_top_p{
+        font-size: 14px;
+    }
+    .cont_rm_bottom_p{
+        font-size: 12px;
+    }
+    .cont_registeredmsg img{
+        margin: 6px;
+    }
+}
