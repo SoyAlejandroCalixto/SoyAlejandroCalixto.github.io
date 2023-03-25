@@ -35,7 +35,6 @@ function submitbutton_click(e)
             rd_bottomP.className = "cont_rm_bottom_p";
             registereddiv.appendChild(rd_bottomP);
             setTimeout((function(){registereddiv.remove()}), 4800);
-            document.getElementById("ContactForm").submit();
         }
     }
     else
