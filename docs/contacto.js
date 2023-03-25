@@ -1,19 +1,3 @@
-const request = new XMLHttpRequest();
-alert(a);
-request.addEventListener("load", ()=>{
-    if(request.status == 200)
-    {
-        alert("¡Todo ha salido bien!");
-    }
-    else
-    {
-        alert("Algo ha salido mal.");
-    }
-})
-
-request.open("GET", "formdata.txt");
-request.send();
-
 let emailregex = /\w+\@\w+\.\w+/;
 
 let main = document.getElementById("main");
