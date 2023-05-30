@@ -175,6 +175,14 @@ footer a{
 .welc_msg{
     padding-top: 35px;
 }
+.all_elements{
+    max-width: 1370px;
+    margin: auto;
+}
+.all_elements_disc{
+    max-width: 1000px;
+    margin: auto;
+}
 .welc_msg_hl{
     background: linear-gradient(90deg, #5d68f5 0%, #aca3ff 100%);
     background-clip: text;

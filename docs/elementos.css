@@ -1,6 +1,5 @@
 .flex-container{
     text-align: center;
-
 }
 .elem-container{
     position: relative;
@@ -48,10 +47,32 @@
     width: 100%;
     font-weight: 600;
 }
-.jueg-welc{
-    background: linear-gradient(90deg, #0063e2 0%, #87e8ff 100%);
+.jueg_welc{
+    background: linear-gradient(90deg, #e20058 0%, #ff87cc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.disc_welc{
+    background: linear-gradient(90deg, #e29b00 0%, #fffa87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pag_welc{
+    background: linear-gradient(90deg, #0063e2 0%, #87e8ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.disc{
+    display: inline-block;
+    margin: 30px 30px;
+    transition: transform 0.35s;
+}
+.disc:hover{
+    transform: scale(1.05);
+}
+.disc img{
+    height: 230px;
 }
 @media (max-width: 500px){
     .elem-container{
