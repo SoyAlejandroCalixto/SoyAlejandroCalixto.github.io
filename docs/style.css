@@ -336,7 +336,21 @@ footer a{
     font-size: 23px;
     font-weight: 500;
 }
-/*SPECIAL*/@media (max-width: 1230px){
+@media (max-width: 1380px){
+    .void{
+        height: 370px;
+    }
+    .firstVoid_item{
+        margin: 0 50px;
+    }
+    .firstVoid_icon.material-symbols-rounded{
+        font-size: 140px;
+    }
+    .firstVoid_title{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1230px){
     .welc_msg{
         margin-right: 330px;
     }
@@ -391,8 +405,20 @@ footer a{
     .descrip-parraf{
         font-size: 0.9em;
     }
+    .void{
+        height: 330px;
+    }
+    .firstVoid_item{
+        margin: 0 40px;
+    }
+    .firstVoid_icon.material-symbols-rounded{
+        font-size: 120px;
+    }
+    .firstVoid_title{
+        font-size: 14px;
+    }
 }
-/*SPECIAL*/@media (max-width: 970px){
+@media (max-width: 970px){
     .whoim_div{
         max-width: 88%;
     }
@@ -409,6 +435,18 @@ footer a{
         font-size: 0.40em;
         width: 310px;
         margin-top: 7px;
+    }
+    .void{
+        height: 230px;
+    }
+    .firstVoid_item{
+        margin: 0 30px;
+    }
+    .firstVoid_icon.material-symbols-rounded{
+        font-size: 100px;
+    }
+    .firstVoid_title{
+        font-size: 12px;
     }
 }
 @media (max-width: 770px){
@@ -434,6 +472,18 @@ footer a{
         display: block;
         margin: auto;
         margin-top: 7px;
+    }
+    .void{
+        height: 170px;
+    }
+    .firstVoid_item{
+        margin: 0 10px;
+    }
+    .firstVoid_icon.material-symbols-rounded{
+        font-size: 70px;
+    }
+    .firstVoid_title{
+        font-size: 12px;
     }
 }
 @media (max-width: 500px){
@@ -513,6 +563,21 @@ footer a{
     }
     .whoim_div{
         max-width: 84%;
+    }
+    .void{
+        height: 570px;
+    }
+    .firstVoid_items{
+        flex-direction: column;
+    }
+    .firstVoid_item{
+        margin: 7px 0;
+    }
+    .firstVoid_icon.material-symbols-rounded{
+        font-size: 100px;
+    }
+    .firstVoid_title{
+        font-size: 12px;
     }
 }
 @media (max-width: 350px)
