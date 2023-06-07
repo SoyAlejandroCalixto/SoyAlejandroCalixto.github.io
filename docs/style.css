@@ -23,11 +23,6 @@ hr{
     border: none;
     border-bottom: #333 solid 1px;
     width: 75vw; margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.hr_type2{
-    margin-bottom: 0;
 }
 .material-symbols-rounded.hr_arrow{
     color: #555;
@@ -35,10 +30,18 @@ hr{
     width: 27px; height: 27px;
     font-size: 27px;
     margin: auto;
-    margin-bottom: 23px;
     user-select: none;
 }
 body{
+    background-color: rgb(10,10,10);
+}
+.index_body{
+    background-image: url('generalimages/body_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.black_background{
     background-color: rgb(10,10,10);
 }
 header{
@@ -130,9 +133,19 @@ footer a{
     font-weight: 500;
     font-size: 0.95em;
 }
+.black_background{
+    background-color: rgb(10,10,10);
+}
 .flex-container{
     display: flex;
     justify-content: center;
+}
+.void{
+    height: 400px;
+}
+.voidchar{
+    color: #0000;
+    line-height: 0;
 }
 .main{
     width: 100%;
@@ -172,8 +185,41 @@ footer a{
     z-index: 100;
     transition: all 0.45s;
 }
+.first_black_background_section{
+    display: flex;
+    width: 100%;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+}
+.contactbutton{
+    color: #111;
+    font-weight: 700;
+    font-size: 0.9em;
+    background-size: 300% 300%;
+    background-position: left;
+    background-image: linear-gradient(90deg, #5d68f5 0%, #aca3ff 35%, #76ffcb 65%, #00a488 100%);
+    border: none;
+    border-radius: 9999px;
+    width: 150px; height: 50px;
+    transition: background 0.55s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+.contactbutton:hover{
+    background-position: right;
+}
 .welc_msg{
+    text-align: left;
+    display: inline-block;
+    margin-right: 570px;
+}
+.welc_msg2{
     padding-top: 35px;
+    text-align: center;
 }
 .all_elements{
     max-width: 1370px;
@@ -183,23 +229,34 @@ footer a{
     max-width: 1000px;
     margin: auto;
 }
+.welc_msg_firstSpan{
+    display: block;
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 0.83em;
+}
 .welc_msg_hl{
+    font-size: 1.47em;
+    line-height: 120%;
     background: linear-gradient(90deg, #5d68f5 0%, #aca3ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.homeP{
-    margin-left: 3vw;
-    margin-right: 3vw;
-    text-align: center;
-    font-size: 14px;
+.welc_msg_secondSpan{
+    display: block;
+    line-height: 130%;
+    font-weight: 500;
+    font-size: 0.55em;
+    margin-top: 10px;
+    width: 430px;
+    text-align: left;
 }
 .whoim_div{
     background-color: #212133;
     position: relative;
     padding: 20px;
-    margin: 8px auto;
+    margin: 23px auto;
     border-radius: 24px;
     max-width: 900px;
     transition: all 0.35s;
@@ -243,6 +300,7 @@ footer a{
     text-align: center;
 }
 .blackblock{
+    background-color: rgb(10,10,10);
     height: 500px;
     text-align: center;
 }
@@ -256,13 +314,23 @@ footer a{
     height: 87%;
     margin-top: 0px;
 }
-@media (max-width: 1170px){
+/*SPECIAL*/@media (max-width: 1230px){
     .welc_msg{
-        font-size: 1.5em;
+        margin-right: 330px;
     }
-    .postwelc{
-        font-size: 0.85em;
+    .welc_msg_firstSpan{
+        font-size: 0.70em;
     }
+    .welc_msg_hl{
+        font-size: 1.23em;
+    }
+    .welc_msg_secondSpan{
+        font-size: 0.46em;
+        width: 360px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 1170px){
     .homeP{
         font-size: 0.8em;
     }
@@ -306,13 +374,75 @@ footer a{
     .whoim_div{
         max-width: 88%;
     }
+    .welc_msg{
+        margin-right: 200px;
+    }
+    .welc_msg_firstSpan{
+        font-size: 0.60em;
+    }
+    .welc_msg_hl{
+        font-size: 1.07em;
+    }
+    .welc_msg_secondSpan{
+        font-size: 0.40em;
+        width: 310px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 770px){
+    .first_black_background_section{
+        flex-direction: column;
+    }
+    .welc_msg{
+        margin-right: 0;
+        margin-bottom: 23px;
+    }
+    .welc_msg_firstSpan{
+        font-size: 0.70em;
+        text-align: center;
+    }
+    .welc_msg_hl{
+        font-size: 1.30em;
+        display: block;
+        text-align: center;
+    }
+    .welc_msg_secondSpan{
+        font-size: 0.40em;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+    }
 }
 @media (max-width: 500px){
-    .welc_msg{
-        font-size: 1.05em;
+    .first_black_background_section{
+        flex-direction: column;
     }
-    .postwelc{
-        font-size: 0.62em;
+    .welc_msg{
+        margin-right: 0;
+        margin-bottom: 23px;
+    }
+    .welc_msg_firstSpan{
+        font-size: 0.50em;
+        text-align: center;
+    }
+    .welc_msg_hl{
+        font-size: 0.87em;
+        display: block;
+        text-align: center;
+    }
+    .welc_msg_secondSpan{
+        font-size: 0.33em;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        width: 270px;
+    }
+    .contactbutton{
+        font-size: 0.87em;
+        height: 40px;
+        width: 130px;
     }
     .homeP{
         font-size: 0.5em;
@@ -365,12 +495,6 @@ footer a{
 }
 @media (max-width: 350px)
 {
-    .welc_msg{
-        font-size: 0.85em;
-    }
-    .postwelc{
-        font-size: 0.55em;
-    }
     .homeP{
         font-size: 0.48em;
     }

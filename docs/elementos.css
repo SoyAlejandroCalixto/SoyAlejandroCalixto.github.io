@@ -18,9 +18,6 @@
 .elem-container:hover{
     transform: scale(1.05);
 }
-.jueg_welc_msg{
-    padding-top: 35px;
-}
 .elem_bc{
     position: absolute;
     width: 100%; height: 100%;
@@ -53,11 +50,13 @@
     -webkit-text-fill-color: transparent;
 }
 .disc_welc{
+    padding-top: 35px;
     background: linear-gradient(90deg, #e29b00 0%, #fffa87 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .pag_welc{
+    padding-top: 35px;
     background: linear-gradient(90deg, #0063e2 0%, #87e8ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
