@@ -80,6 +80,7 @@ header {
 
 .homeheaderlink img {
     height: 100%;
+    border-radius: 9999px;
     filter: drop-shadow(3px 4px 4px #000a);
 }
 
