@@ -43,7 +43,7 @@
             <h1 class="welc_msg2"><span class="cont_welc">Contacto</span></h1>
             <h2 class="cont_postwelc">Introduce tus datos para contactar</h2>
             <hr style="margin: 23px auto;">
-            <form id="ContactForm">
+            <form id="ContactForm" action="enviar_formulario.php" method="POST">
                 <div class="cont_campdiv">
                     <p class="cont_camp_p">Nombre:</p>
                     <input name="name" id="nameinput" type="text" class="cont_input" placeholder="Nombre">
@@ -56,8 +56,8 @@
                     <p class="cont_camp_p">Mensaje:</p>
                     <textarea name="message" id="msginput" class="cont_areainput" placeholder="Mensaje"></textarea>
                 </div>
+                <input type="submit" id="cont_submitbutton" class="cont_submitbutton"></input> 
             </form>
-            <button id="cont_submitbutton" class="cont_submitbutton">Enviar</button> 
         </div>
     </div>
     <footer>
