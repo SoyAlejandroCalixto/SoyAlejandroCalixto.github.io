@@ -57,33 +57,28 @@
     background-position: right;
 }
 .cont_registeredmsg{
-    text-align: center;
-    position: fixed;
-    width: 300px; height: 300px;
-    right: 0; bottom: -100vh; margin: 80px 40px;
-    opacity: 0;
-    background-color: #111;
-    border-radius: 16px;
-    border: #555 solid 1px;
-    animation: registeredmsg_anim;
-    animation-duration: 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
 .cont_registeredmsg img{
+    height: 400px;
+    margin: 20px 0;
     opacity: 0.7;
-    height: 50%;
-    margin: 16px;
 }
 .cont_rm_top_p{
-    color: #aaa;
-    margin: 7px;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 50px;
 }
-.cont_rm_bottom_p{
-    color: #888;
-    margin: 7px;
-    font-weight: 500;
-    font-size: 16px;
+.cont_rm_bottom_p_1{
+    font-size: 23px;
+}
+.cont_rm_bottom_p_2{
+    margin-top: 1px;
+    font-size: 15px;
+    color: #777;
 }
 .cont_errormsg{
     text-align: center;
@@ -91,26 +86,25 @@
     font-size: 12px;
     font-weight: 400;
 }
-@keyframes registeredmsg_anim{
-    0%{
-        bottom: -100vh;
-        opacity: 1;
+@media (max-width: 1170px){}
+@media (max-width: 700px){
+    .cont_registeredmsg img{
+        height: 300px;
+        margin: 20px 0;
+        opacity: 0.7;
     }
-    10%{
-        bottom: 0;
+    .cont_rm_top_p{
+        font-weight: 700;
+        font-size: 40px;
     }
-    80%{
-        bottom: 0;
+    .cont_rm_bottom_p_1{
+        font-size: 18px;
     }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        bottom: -100vh;
-        opacity: 0;
+    .cont_rm_bottom_p_2{
+        margin-top: 3px;
+        font-size: 12px;
     }
 }
-@media (max-width: 1170px){}
 @media (max-width: 500px){
     .cont_campdiv{
         width: 260px;
@@ -130,15 +124,21 @@
     .cont_submitbutton:after{
         width: 262px;
     }
-    .cont_registeredmsg{
-        height: 235px; width: 235px;
-        margin: 70px 30px;
+    .cont_registeredmsg img{
+        height: 230px;
+        margin: 10px 0;
+        opacity: 0.7;
     }
     .cont_rm_top_p{
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 33px;
     }
-    .cont_rm_bottom_p{
-        font-size: 12px;
+    .cont_rm_bottom_p_1{
+        font-size: 15px;
+    }
+    .cont_rm_bottom_p_2{
+        margin-top: 3px;
+        font-size: 10px;
     }
 }
 @media (max-width: 350px){
@@ -160,18 +160,20 @@
     .cont_submitbutton:after{
         width: 212px;
     }
-    .cont_registeredmsg{
-        height: 180px; width: 180px;
-        margin: 70px 30px;
-        border-radius: 12px;
+    .cont_registeredmsg img{
+        height: 170px;
+        margin: 7px 0;
+        opacity: 0.7;
     }
     .cont_rm_top_p{
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 27px;
     }
-    .cont_rm_bottom_p{
-        font-size: 12px;
+    .cont_rm_bottom_p_1{
+        font-size: 13px;
     }
-    .cont_registeredmsg img{
-        margin: 6px;
+    .cont_rm_bottom_p_2{
+        margin-top: 3px;
+        font-size: 9px;
     }
 }
