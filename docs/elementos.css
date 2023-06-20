@@ -31,7 +31,6 @@
     width: 100%;
     transform: scale(0.93);
     border-radius: 13px;
-    border: #555 solid 1px;
 }
 .elem-container p{
     margin: 5px 20px;
@@ -44,34 +43,45 @@
     width: 100%;
     font-weight: 600;
 }
+.e_firstblock{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .jueg_welc{
     background: linear-gradient(90deg, #e20058 0%, #ff87cc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.disc_welc{
-    padding-top: 35px;
-    background: linear-gradient(90deg, #e29b00 0%, #fffa87 100%);
+.tecn_welc{
+    background: linear-gradient(90deg, #e29b00 0%, #fdf673 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .pag_welc{
-    padding-top: 35px;
     background: linear-gradient(90deg, #0063e2 0%, #87e8ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.disc{
+.tecn{
     display: inline-block;
-    margin: 30px 30px;
+    margin: 47px 47px;
     transition: transform 0.35s;
+    text-decoration: none;
 }
-.disc:hover{
+.tecn:hover{
     transform: scale(1.05);
 }
-.disc img{
+.tecn img{
     height: 230px;
+}
+.tecn p{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
 }
 @media (max-width: 500px){
     .elem-container{

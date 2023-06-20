@@ -4,8 +4,12 @@
     position: relative;
     left: 50%; transform: translateX(-50%);
 }
-.welc_msg2{
-    padding-top: 35px;
+.e_firstblock{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .cont_welc{
     display: inline-block;

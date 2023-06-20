@@ -278,8 +278,12 @@ footer a {
 }
 
 .welc_msg2 {
-    padding-top: 35px;
+    font-size: 47px;
     text-align: center;
+}
+
+.postwelc{
+    font-size: 17px;
 }
 
 .all_elements {
@@ -287,7 +291,7 @@ footer a {
     margin: auto;
 }
 
-.all_elements_disc {
+.all_elements_tecn {
     max-width: 1000px;
     margin: auto;
 }
@@ -300,7 +304,7 @@ footer a {
 }
 
 .welc_msg_hl {
-    font-size: 1.47em;
+    font-size: 47px;
     line-height: 120%;
     background: linear-gradient(90deg, #5d68f5 0%, #aca3ff 100%);
     background-clip: text;
